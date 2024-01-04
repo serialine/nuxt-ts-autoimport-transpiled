@@ -1,0 +1,36 @@
+{
+  "vueCompilerOptions": {
+    "target": 2.7,
+    "plugins": [
+      "@vue-macros/volar/define-options",
+      "@vue-macros/volar/define-models",
+      "@vue-macros/volar/define-props",
+      "@vue-macros/volar/define-props-refs",
+      "@vue-macros/volar/short-vmodel",
+      "@vue-macros/volar/define-slots",
+      "@vue-macros/volar/export-props",
+      "@vue-macros/volar/jsx-directive"
+    ]
+  },
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "strict": false,
+    "isolatedModules": true,
+    "noImplicitThis": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}
